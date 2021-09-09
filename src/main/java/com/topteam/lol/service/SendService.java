@@ -22,4 +22,8 @@ public class SendService {
     public void callOne(String name) {
         dingTalkRobot.sendText("@" + name + " " + SHANG_HAO);
     }
+
+    public void sendText(String text) {
+        dingTalkRobot.sendText(text);
+    }
 }

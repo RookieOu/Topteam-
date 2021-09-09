@@ -2,6 +2,7 @@ package com.topteam.lol;
 
 import com.topteam.lol.annotation.TptController;
 import com.topteam.lol.service.SendService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -30,6 +31,13 @@ public class LolController {
     String one(@RequestParam Map<String, String> params) {
         String name = params.get("name");
         sendService.callOne(name);
+        return "ok";
+    }
+
+    @GetMapping("/ds")
+    String ds(@RequestParam Map<String, String> params) {
+        String text = params.get("text");
+        sendService.sendText(text);
         return "ok";
     }
 }
