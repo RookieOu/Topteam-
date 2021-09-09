@@ -1,0 +1,7 @@
+server:
+  port: 4396
+
+dingtalk:
+  robot-enable: true
+  robot-token: "305465119118dbf271d2912c845089de97ff50c2eae8cb6ea599035dc18ff534"
+  robot-secret: "SEC3be2ab1624267e5d0d0063746847b2d89b5fed8c109f43b58015d15ab5ec7101"
